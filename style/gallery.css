@@ -1,0 +1,261 @@
+/************** Animations ******************/
+
+@keyframes grow {
+  100%{
+    transform: scale(0.92);
+    filter:brightness(105%) saturate(130%);
+  }
+}
+
+@keyframes colorate {
+  100%{
+    filter:brightness(150%) saturate(130%);
+  }
+}
+
+/********** General Styling **********/
+body, html {
+  color: rgb(79, 55, 88);
+}
+
+.single_img {
+  text-align: center;
+}
+
+.single_img img {
+  border-radius: 30px;
+}
+
+/********** Album **********/
+
+.albums {
+  padding-bottom: 20px;
+}
+
+.albums img {
+  position: relative;
+  margin: 6px;
+  max-width: 29.5vw;
+  max-height: 29.5vw;
+  border-radius: 30px;
+  z-index: 1;
+}
+
+.albums ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin: 0px;
+  padding: 0px;
+}
+
+.albums li{
+  display: flex;
+  flex-direction: column;
+  filter: brightness(105%) saturate(130%);
+  transform: scale(0.9);
+  transition: all 0s ease;
+  margin:10px;
+  list-style-type: none;
+}
+
+.albums li:hover{
+  animation-name: grow;
+  animation-duration: .2s;
+  animation-fill-mode: forwards;
+}
+
+.labels {
+  color: white;
+  text-decoration: none;
+  background-color: rgb(79, 55, 88);
+  padding: 15px;
+  z-index: 20;
+  border-radius: 20px;
+  text-align: center;
+  margin-bottom: 0px;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 20pt;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.labels a {
+  color: white;
+  text-decoration: none;
+}
+
+.albums li:not(:hover){
+  filter: brightness(100%) saturate(100%);
+}
+
+.smaller{
+  text-transform: lowercase;
+  font-size: 80%;
+}
+
+/********** Gallery **********/
+.gallery img {
+  margin: 10px;
+  max-width: 25.5vw;
+  max-height: 25.5vw;
+
+  min-width: 25.5vw;
+  min-height: 25.5vw;
+
+  /* float: left; */
+  border-radius: 30px;
+}
+
+.gallery ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-bottom: 20px;
+  padding: 0px;
+  cursor: pointer;
+  margin: 0px;
+}
+
+.gallery li {
+  list-style-type: none;
+  padding: 20px;
+}
+
+.img_style{
+  text-decoration: none;
+}
+
+.img_style img{
+  max-width: 375px;
+}
+
+.img_style:hover{
+  filter: brightness(105%) saturate(130%);
+  transform: scale(0.92);
+  transition: all .2s ease;
+}
+
+.price{
+  font-weight: normal;
+}
+
+.img_style:not(:hover){
+  filter: brightness(100%) saturate(100%);
+  transform: scale(0.9);
+  transition: all .2s ease;
+}
+
+.desc {
+  margin: 0px;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+  color:rgb(79, 55, 88);
+  max-width: 29.5vw;
+}
+
+/********** Gallery 2 **********/
+.gallery2 ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  flex-direction: row;
+  max-height: 100vh;
+  justify-content: space-evenly;
+  padding: 0px;
+  margin: 0px;
+}
+
+.gallery2 li {
+  list-style-type: none;
+}
+
+/********** Messages and Back Button **********/
+.buy_msg {
+  font-weight: bold;
+  padding: 10px;
+}
+
+.unfortunate_msg {
+  color: red;
+  margin-top: 40px;
+  font-size: 15pt;
+}
+
+.unfortunate_msg_no_pad {
+  color: red;
+  font-size: 15pt;
+}
+
+.back {
+  position: absolute;
+  top: 65px;
+}
+
+.pad_top {
+  padding-top: 20px;
+}
+
+.padd {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.product_sing_img img {
+  max-width: 35%;
+  max-height: 35%;
+}
+
+.adjust_margin {
+  margin: 0px;
+  padding-top: 10px;
+}
+
+.adjust_margin_sp {
+  margin-top: -30px;
+}
+
+.adjust_margin_spe {
+  margin: 20px;
+  /* margin-bottom: 40px; */
+  padding-top: 10px;
+}
+
+.no_pad {
+  padding: 0px;
+  margin-bottom: 10px;
+}
+
+.expand {
+  margin: 170px;
+}
+
+/********** Tag Gallery **********/
+.tag_gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  flex-direction: row;
+  max-height: 100vh;
+  justify-content: space-evenly;
+}
+
+
+/********** Buy Now/Delete/Edit Button Display **********/
+.button_display ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.button_display li {
+  list-style-type: none;
+}

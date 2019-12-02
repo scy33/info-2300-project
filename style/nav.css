@@ -1,0 +1,78 @@
+/********** Lists **********/
+ul.no-indent {
+    padding: 0;
+}
+
+/********** Navigation **********/
+nav {
+    padding:0;
+    /* padding-left: 30px; */
+    letter-spacing:3px;
+    text-align: center;
+    margin: 0;
+    position: fixed;
+    height: 75px;
+    width:100%;
+    margin-top:-10px;
+    background-color: rgb(79, 55, 88);
+    font-variant: all-small-caps;
+    z-index: 50;
+    color:white;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* nav ul{
+    margin-right: 30px;
+    padding-right: 30px;
+} */
+
+nav li {
+    display: inline-block;
+    width: 170px;
+    height: 51px;
+    color:white;
+
+    margin-top:-10px;
+    padding-top:18px;
+
+    font-size: 150%;
+    /* font-family: sans-serif; */
+    cursor: pointer;
+}
+
+nav li#current-page {
+    background-color:rgb(116, 95, 123);
+    color:white;
+    margin-left:-6.5px;
+    margin-right:-6.5px;
+    cursor: pointer;
+}
+
+nav li#current-page:hover{
+    background-color:rgb(49, 39, 52);
+    cursor: pointer;
+}
+
+/********** Removes the link underline from the navigation content **********/
+nav li a {
+    text-decoration: none;
+    color:white;
+    padding: 20px;
+}
+
+nav li a.current-page-a {
+    color:white;
+}
+
+nav li:hover{
+    background-color: rgb(49, 39, 52);
+}
+
+.add-space {
+    padding: 30px;
+}
+
+.add_pad {
+    padding-left: 20px;
+}
